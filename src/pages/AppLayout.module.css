@@ -1,0 +1,65 @@
+.app {
+  height: calc(100vh - 5rem);
+  margin: 2.5rem;
+  background-color: var(--color-dark--2);
+  padding: 2.5rem 5rem;
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.8),
+      rgba(36, 42, 46, 0.8)
+    ),
+    url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.app p {
+  color: #fff;
+}
+.app--1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.app--1 input {
+  border-radius: 9px 0px 0px 9px;
+  padding: 1rem 3rem;
+  display: inline-block;
+  /* color: var(--color-dark--2); */
+  font-weight: 500;
+  font-size: 2rem;
+}
+.app--1 input:focus {
+  outline: none;
+}
+.app--1 button {
+  border-radius: 0px 9px 9px 0px;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: -5px;
+  transition: all 0.5s;
+}
+
+.hover {
+  visibility: hidden;
+  width: 3rem;
+  color: #fff;
+  text-align: center;
+  left: 6rem;
+  top: 1rem;
+  display: inline-block;
+  /* bottom: -2rem; */
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+.app--1 button:hover .hover {
+  visibility: visible;
+}
+.app--1 button:hover {
+  background-color: var(--color-light--1);
+}

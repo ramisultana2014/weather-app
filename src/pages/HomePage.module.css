@@ -1,0 +1,75 @@
+.homepage {
+  height: calc(100vh - 5rem);
+  margin: 2.5rem;
+  padding: 2.5rem 5rem;
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.5),
+      rgba(36, 42, 46, 0.5)
+    ),
+    url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.homepage section {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+.homepage h1 {
+  font-size: 4.5rem;
+  line-height: 1.3;
+  animation-duration: 2s;
+  animation-name: slideinr;
+}
+@keyframes slideinr {
+  from {
+    margin-right: 40rem;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+.homepage h2 {
+  width: 90%;
+  font-size: 1.9rem;
+  color: var(--color-light--1);
+  margin-bottom: 2.5rem;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 20rem;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem 3rem;
+  background-color: var(--color-brand--2);
+  border-radius: 8px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  animation-duration: 2s;
+  animation-name: slideinup;
+}
+@keyframes slideinup {
+  from {
+    margin-top: 10rem;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}

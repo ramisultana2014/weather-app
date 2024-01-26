@@ -1,0 +1,39 @@
+.spinnerContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, var(--color-light--2));
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* .spinnerContainer class:
+
+This class is used for styling a container that will hold the spinner.
+It sets the container's height to 100% of its parent, making it take up the full height.
+The display: flex property is used to create a flex container, and align-items: center and justify-content: center are used to vertically and horizontally center the content (in this case, the spinner).
+.spinner class:
+
+This class is used for styling the actual spinner.
+width and height are set to create a square shape with a size of 6rem (6 rem units).
+border-radius: 50% is used to make the spinner a perfect circle by giving it a border radius of 50%.
+background property is set to a conic gradient, creating a gradient that appears as a rotating circle. The gradient starts with transparent color (#0000) and ends with a light color (var(--color-light--2)).
+-webkit-mask property is used to define an alpha mask for the element. In this case, it's a radial gradient that creates a circular mask. The mask is used to control the visibility of the element based on the gradient.
+animation property is used to apply the rotate animation to the spinner. The animation lasts for 1.5 seconds, is set to rotate infinitely (infinite), and follows a linear timing function.
+@keyframes rotate:
+
+This is a keyframes rule defining the rotate animation.
+It rotates the element by 1turn (which is equivalent to 360 degrees), making a full rotation.
+Overall, this CSS is creating a visually appealing spinning/loading animation. The -webkit-mask property is used for browser compatibility, and it defines how the spinner should be masked to create the desired visual effect. */

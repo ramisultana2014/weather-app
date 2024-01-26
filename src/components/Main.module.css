@@ -1,0 +1,57 @@
+.main {
+  height: 80vh;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+.background-sunny {
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.5),
+      rgba(36, 42, 46, 0.5)
+    ),
+    url("/cleanSky.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.background-cloud {
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.5),
+      rgba(36, 42, 46, 0.5)
+    ),
+    url("/cloud.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.background-rainy {
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.5),
+      rgba(36, 42, 46, 0.5)
+    ),
+    url("/rainy.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.background-snow {
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.5),
+      rgba(36, 42, 46, 0.5)
+    ),
+    url("/snow.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.main-text {
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.main-text h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
